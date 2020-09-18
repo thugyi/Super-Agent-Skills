@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Vue js Modifers
+        </title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1>{{ name }}</h1>
+            <button @click.space="Message"> Click Here </button>
+            <button @click.shift="Message"> Click Here </button>
+            <a href="https//vuejs.org/v2/guide/" @click.prevent> Vuejs </a>
+        </div>
+
+    <script>
+        var app = new Vue ({
+            el: '#app',
+            data:{
+                name: 'Welcome Guy!!'
+            },
+        methods:{
+            Message(){
+                console.log('easy learning')
+            }
+        }
+
+        })
+    </script>
+    </body>
+</html>
